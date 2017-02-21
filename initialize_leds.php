@@ -1,0 +1,172 @@
+<?php
+
+echo 'begin';
+ 
+ $pin = "0";
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."1";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."0";
+ exec($led);
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+
+
+ $pin = "3";
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."1";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."0";
+ exec($led);
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+
+ $pin = "4";
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."1";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."0";
+ exec($led);
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+
+ $pin = "5";
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."1";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."0";
+ exec($led);
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+
+ sleep(1);
+
+ $pin = "5";
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."1";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."0";
+ exec($led);
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+
+ $pin = "4";
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."1";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."0";
+ exec($led);
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+
+ $pin = "3";
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."1";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."0";
+ exec($led);
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+
+ $pin = "0";
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."1";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."0";
+ exec($led);
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+
+
+ for ($i = 1; $i <= 4; $i++) {
+
+    $pin = "0";
+    $led = "gpio mode ".$pin." OUT";
+    exec($led);
+    $led = "gpio write ".$pin." ";
+    $led = $led."1";
+    exec($led);
+
+    $pin = "3";
+    $led = "gpio mode ".$pin." OUT";
+    exec($led);
+    $led = "gpio write ".$pin." ";
+    $led = $led."1";
+    exec($led);
+
+    $pin = "4";
+    $led = "gpio mode ".$pin." OUT";
+    exec($led);
+    $led = "gpio write ".$pin." ";
+    $led = $led."1";
+    exec($led);
+
+    $pin = "5";
+    $led = "gpio mode ".$pin." OUT";
+    exec($led);
+    $led = "gpio write ".$pin." ";
+    $led = $led."1";
+    exec($led);
+   
+    sleep(1);
+
+    $pin = "0";
+    $led = "gpio write ".$pin." ";
+    $led = $led."0";
+    exec($led);
+    $led = "gpio mode ".$pin." OUT";
+    exec($led);
+
+    $pin = "3";
+    $led = "gpio write ".$pin." ";
+    $led = $led."0";
+    exec($led);
+    $led = "gpio mode ".$pin." OUT";
+    exec($led);
+
+    $pin = "4";
+    $led = "gpio write ".$pin." ";
+    $led = $led."0";
+    exec($led);
+    $led = "gpio mode ".$pin." OUT";
+    exec($led);
+
+    $pin = "5";
+    $led = "gpio write ".$pin." ";
+    $led = $led."0";
+    exec($led);
+    $led = "gpio mode ".$pin." OUT";
+    exec($led);
+
+    sleep(1);
+}
+
+
+
+echo 'end';
+
+?>

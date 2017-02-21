@@ -1,0 +1,17 @@
+$led = "gpio write ".$pin." ";
+                $led = $led."0";
+                exec($led);
+                $led = "gpio mode ".$pin." OUT";
+                exec($led);
+<?php
+
+ $pin = "0";
+ $led = "gpio mode ".$pin." OUT";
+ exec($led);
+ $led = "gpio write ".$pin." ";
+ $led = $led."1";
+ exec($led);
+ 
+
+
+?>

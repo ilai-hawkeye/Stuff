@@ -1,0 +1,5 @@
+<?php
+echo 'Starting...'."<br>"; 
+exec('sudo python /var/www/gpio/python/fan.py');
+echo 'Finishing...';
+?>

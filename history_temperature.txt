@@ -1,0 +1,1 @@
+This file record all response for getting RPI's temperature

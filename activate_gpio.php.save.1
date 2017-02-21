@@ -1,0 +1,25 @@
+<?php
+//file that activate the fan for cooling the raspberrypi
+//we gonna use the wiringPi library for controlling the gpio
+//we have conectado the plus of the fan on the second user pin of gpio (physical: nr 18)
+
+define("ON",1);
+define("OFF",0);
+
+$v_state = "";
+
+if (isset($_GET['State']) {
+   $v_state = $_GET['State'];
+}
+switch ($v_state) {
+  case ON:
+	exec("gpio mode 1 OUT");
+	exec("gpio write 1 1");
+        break;
+  case OFF:
+	
+	exec("gpio write 1 0);
+}
+?>
+exec("gpio mode 1 OUT");
+
